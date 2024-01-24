@@ -5,7 +5,6 @@ const $definition = document.querySelector("#definition");
 const $synonym = document.querySelector("#synonym");
 const api = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
-
 $btn.addEventListener("click", async () => {
   const data = await fetch(api.concat(input.value));
   const res = await data.json();
